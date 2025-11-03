@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Deletar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card card-register mx-auto col-6 px-0">
+            <div class="card-header bg-danger text-light">Excluir Funcionário</div>
+            <div class="card-body">
+               <form action="Exercicio8_4deletar.php" method="POST">
+                    <div class="form-group">
+                        <label for="excluir">Digite o CPF do Funcionário para excluir</label>
+                        <input type="text" name="excluir" id="excluir" class="form-control">
+                    </div>
+                    <button class="btn btn-danger btn-block" onClick="return confirm('Deseja realmente excluir?')">Excluir</button>   
+                    <div class="text-center"><a href="Exercicio8_4inicio.php" class="btn btn-primary mt-3 btn-block">Página inicial</a></div>
+                </form>
+            </div>
+        </div>
+    </div>       
+</body>
+</html>

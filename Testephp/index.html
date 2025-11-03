@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalação do Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Teste php</h1>
+        <h2>Formulário de Escalação</h2>
+        
+        <form action="manipular_bd.php" method="POST">
+            <input type="hidden" name="acao" value="inserir">
+            
+            <label for="jogador">Jogador:</label>
+            <input type="text" id="jogador" name="jogador" required>
+            
+            <label for="posicao">Posição:</label>
+            <input type="text" id="posicao" name="posicao">
+            
+            <label for="numero_camisa">Número da Camisa:</label>
+            <input type="number" id="numero_camisa" name="numero_camisa">
+            
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade">
+            
+            <button type="submit">Escalar Jogador</button>
+        </form>
+        
+        <hr>
+        
+        <?php include 'manipular_bd.php'; ?>
+    </div>
+</body>
+</html>
